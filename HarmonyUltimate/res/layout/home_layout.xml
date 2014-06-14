@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <LinearLayout
+        android:id="@+id/VolChanLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+	    <View 
+	        android:layout_width="0dp"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"/>
+	    <Button
+	        android:id="@+id/volumeUpButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Vol U" />
+	    <View 
+	        android:layout_width="0dp"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"/>
+	    <Button
+	        android:id="@+id/volumeDownButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Vol D" />    
+	    <View 
+	        android:layout_width="0dp"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"/>
+	    <Button
+	        android:id="@+id/channelUpButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Ch U" />
+	    <View 
+	        android:layout_width="0dp"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"/>
+	    <Button
+	        android:id="@+id/channelDownButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Ch D" />
+	    <View 
+	        android:layout_width="0dp"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"/>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/getConfigButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/VolChanLayout"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_background"
+        android:src="@drawable/get_config"
+        android:scaleType="centerCrop" />
+
+    <ImageButton
+        android:id="@+id/refreshConfigButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignTop="@+id/getConfigButton"
+        android:layout_toRightOf="@+id/getConfigButton"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/button_background"
+        android:src="@drawable/refresh"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+    
+    <ImageButton
+        android:id="@+id/connectButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignTop="@+id/getConfigButton"
+        android:layout_toRightOf="@+id/refreshConfigButton"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/button_background"
+        android:src="@drawable/connect"
+        android:scaleType="centerCrop" />
+
+    <ImageButton
+        android:id="@+id/disconnectButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignTop="@+id/getConfigButton"
+        android:layout_toRightOf="@+id/connectButton"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/button_background"
+        android:src="@drawable/disconnect"
+        android:scaleType="centerCrop" />
+
+    <ListView
+        android:id="@+id/activitylistView"
+        android:choiceMode="singleChoice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/connectButton"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" >
+
+    </ListView>
+ 
+</RelativeLayout>
+
